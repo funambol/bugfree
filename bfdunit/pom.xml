@@ -24,4 +24,10 @@
             <version>1.6.1</version>
         </dependency>
     </dependencies>
+    
+    <scm>
+        <connection>scm:git:git@github.com:funambol/bugfree.git</connection>
+        <url>https://github.com/funambol/bugfree</url>
+        <tag>HEAD</tag>
+    </scm>
 </project>
