@@ -28,6 +28,8 @@ public class BugFreeSpecRunner {
     
     @Spec
     public void annotationUsingRunWith() throws Exception {
-        System.out.println("CHECK!");
+        //
+        // If we do not have any errors we are good
+        //
     }
 }
