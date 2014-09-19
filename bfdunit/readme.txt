@@ -66,6 +66,7 @@ NOTES:
 
 1) see the 'examples' project for an example on hot to use it
 2) KNOWN ISSUE: Using only the Spec annotation, the functions Run focused test
-   and Debug focused test do not work any more in Netbeans. I am trying to
-   understand why.
+   and Debug focused test do not work any more in Netbeans. The workaround is to
+   use both the @Spec and @Test annotations. Far from nice, but doable :)
+   I am trying to understand why.
 
