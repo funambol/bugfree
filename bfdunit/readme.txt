@@ -64,7 +64,7 @@ How to use BugFreeToolkit
 
 NOTES:
 
-1) see the test project for an example on hot to use it
+1) see the 'examples' project for an example on hot to use it
 2) KNOWN ISSUE: Using only the Spec annotation, the functions Run focused test
    and Debug focused test do not work any more in Netbeans. I am trying to
    understand why.
