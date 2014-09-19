@@ -3,24 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.funambol</groupId>
     <artifactId>bugfreetoolkit</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.6-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Bug Free Development Toolkit</name>
     <description>The bug free toolkit</description>
     <dependencies>
-            <!--
-            Using maven-scm plugin 1.9.1 to fix issue https://jira.codehaus.org/browse/MRELEASE-812
-            -->
-            <dependency>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-api</artifactId>
-                <version>1.9.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-provider-gitexe</artifactId>
-                <version>1.9.1</version>
-            </dependency>
         <dependency>
             <groupId>org.apache.maven.surefire</groupId>
             <artifactId>surefire-api</artifactId>
@@ -76,6 +63,21 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5</version>
+                <dependencies>
+                    <!--
+                    Using maven-scm plugin 1.9.1 to fix issue https://jira.codehaus.org/browse/MRELEASE-812
+                    -->
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-api</artifactId>
+                        <version>1.9.1</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.9.1</version>
+                    </dependency>
+                </dependencies>
             </plugin>
 
             <!--
