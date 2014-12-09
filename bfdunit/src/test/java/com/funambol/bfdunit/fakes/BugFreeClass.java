@@ -20,7 +20,8 @@ package com.funambol.bfdunit.fakes;
 import com.funambol.bfdunit.Spec;
 
 /**
- *
+ * This class is not meant to be Run as a spec. It is used by BuFreeSpecJUnit4Provider
+ * 
  * @author ste
  */
 public class BugFreeClass {
