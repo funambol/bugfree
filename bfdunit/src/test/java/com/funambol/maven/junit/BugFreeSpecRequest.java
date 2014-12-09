@@ -15,18 +15,20 @@
  * THIS SOFTWARE OR ITS DERIVATIVES.
  * </FUNAMBOLCOPYRIGHT>
  */
-package com.funambol.bfdunit.fakes;
+package com.funambol.maven.junit;
 
-import com.funambol.bfdunit.Spec;
+import com.funambol.bfdunit.fakes.BugFreeClass;
+import static org.assertj.core.api.BDDAssertions.then;
+import org.junit.Test;
 
 /**
  *
  * @author ste
  */
-public class BugFreeClass {
+public class BugFreeSpecRequest {
     
-    @Spec
-    public void aFirstSpec() {
+    @Test
+    public void aClassReturnsSpecRequest() {
+        then(SpecRequest.aClass(BugFreeClass.class)).isInstanceOf(SpecClassRequest.class);
     }
-    
 }

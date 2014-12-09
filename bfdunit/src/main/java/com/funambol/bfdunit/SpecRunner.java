@@ -17,7 +17,6 @@
  */
 package com.funambol.bfdunit;
 
-import com.funambol.bfdunit.Spec.None;
 import java.util.List;
 import org.junit.internal.runners.statements.ExpectException;
 import org.junit.runners.BlockJUnit4ClassRunner;
@@ -60,6 +59,7 @@ public class SpecRunner extends BlockJUnit4ClassRunner {
      * throws an exception of the correct type, and throw an exception
      * otherwise.
      */
+    @Override
     protected Statement possiblyExpectingExceptions(FrameworkMethod method,
             Object test, Statement next) {
         Spec annotation = method.getAnnotation(Spec.class);
@@ -70,23 +70,10 @@ public class SpecRunner extends BlockJUnit4ClassRunner {
     // --------------------------------------------------------- private methods
     
     private Class<? extends Throwable> getExpectedException(Spec annotation) {
-        if (annotation == null || annotation.expected() == None.class) {
-            return null;
-        } else {
-            return annotation.expected();
-        }
+        return null;
     }
 
     private boolean expectsException(Spec annotation) {
         return getExpectedException(annotation) != null;
     }
-
-    
-    private long getTimeout(Spec annotation) {
-        if (annotation == null) {
-            return 0;
-        }
-        return annotation.timeout();
-    }
-    
 }

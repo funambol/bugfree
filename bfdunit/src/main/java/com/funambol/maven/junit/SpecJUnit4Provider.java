@@ -43,7 +43,6 @@ import java.util.List;
 
 import org.apache.maven.surefire.common.junit4.JUnit4RunListener;
 import org.apache.maven.surefire.common.junit4.JUnit4RunListenerFactory;
-import org.apache.maven.surefire.common.junit4.JUnit4TestChecker;
 import org.apache.maven.surefire.providerapi.AbstractProvider;
 import org.apache.maven.surefire.providerapi.ProviderParameters;
 import org.apache.maven.surefire.report.ConsoleOutputCapture;
@@ -62,7 +61,6 @@ import org.apache.maven.surefire.util.ScanResult;
 import org.apache.maven.surefire.util.TestsToRun;
 import org.apache.maven.surefire.util.internal.StringUtils;
 
-import org.junit.runner.Request;
 import org.junit.runner.Result;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;
@@ -208,7 +206,7 @@ public class SpecJUnit4Provider
             for (Method method : methods) {
                 for (String testMethod : testMethods) {
                     if (SelectorUtils.match(testMethod, method.getName())) {
-                        Runner junitTestRunner = Request.method(testClass, method.getName()).getRunner();
+                        Runner junitTestRunner = SpecRequest.method(testClass, method.getName()).getRunner();
                         junitTestRunner.run(fNotifier);
                     }
 
