@@ -19,9 +19,6 @@ package com.funambol.maven.junit;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.maven.surefire.report.ConsoleOutputReceiver;
-import org.apache.maven.surefire.report.ReporterFactory;
-import org.apache.maven.surefire.suite.RunResult;
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunListener;
 
