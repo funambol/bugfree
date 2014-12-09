@@ -2,7 +2,6 @@ package com.funambol.test;
 
 import com.funambol.bfdunit.Spec;
 import static org.assertj.core.api.BDDAssertions.then;
-import org.junit.Test;
 
 /**
  *
