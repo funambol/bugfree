@@ -59,8 +59,13 @@ How to use BugFreeToolkit
             </dependency>
         </dependencies>
   </plugin>
+
+5) If you use Netbeans, replace org-netbeans-modules-junit.jar 
+   (https://drive.google.com/open?id=0BxYf-5y7gHV2RkZnbnRQeU1QdE0&authuser=1)
+   under <NETBEANSHOME>/java/modules to make "Run Focused Test Method" work
+   on @Spec annotated methods
   
-5) Use @Spec instead of @Test
+6) Use @Spec instead of @Test
 
 NOTES:
 
