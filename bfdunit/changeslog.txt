@@ -1,0 +1,5 @@
+20150503
+--------
+- added support for @Test for better support of legacy code
+- added support for @Spec(expected = Exception.class)
+- released version 1.4
