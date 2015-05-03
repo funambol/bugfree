@@ -18,7 +18,6 @@
 package com.funambol.bfdunit;
 
 import java.util.List;
-import java.util.Collections;
 import org.junit.Test;
 import org.junit.internal.runners.statements.ExpectException;
 import org.junit.runners.BlockJUnit4ClassRunner;
