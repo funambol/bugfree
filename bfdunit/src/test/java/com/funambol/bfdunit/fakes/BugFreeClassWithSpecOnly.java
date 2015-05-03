@@ -1,6 +1,6 @@
 /*
  * <FUNAMBOLCOPYRIGHT>
- * Copyright (C) 2014 Funambol.
+ * Copyright (C) 2015 Funambol.
  * All Rights Reserved.  No use, copying or distribution of this
  * work may be made except in accordance with a valid license
  * agreement from Funambol.  This notice must be
@@ -15,27 +15,19 @@
  * THIS SOFTWARE OR ITS DERIVATIVES.
  * </FUNAMBOLCOPYRIGHT>
  */
-package com.funambol.bfdunit;
+package com.funambol.bfdunit.fakes;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import com.funambol.bfdunit.Spec;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD})
-public @interface Spec {
-
-    /**
-     * Default empty exception
-     */
-    static class None extends Throwable {
-
-        private static final long serialVersionUID = 1L;
-
-        private None() {
-        }
-    }
-    
-    Class<? extends Throwable> expected() default None.class;
+/**
+ * This class is not meant to be Run as a spec. It is used by BuFreeSpecJUnit4Provider
+ * 
+ * @author ste
+ */
+public class BugFreeClassWithSpecOnly {
+        
+    @Spec(expected = IllegalArgumentException.class)
+    public void aFirstSpec() {
+        throw new IllegalArgumentException();
+    }    
 }

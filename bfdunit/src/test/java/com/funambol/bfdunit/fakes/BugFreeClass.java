@@ -18,6 +18,7 @@
 package com.funambol.bfdunit.fakes;
 
 import com.funambol.bfdunit.Spec;
+import org.junit.Test;
 
 /**
  * This class is not meant to be Run as a spec. It is used by BuFreeSpecJUnit4Provider
@@ -28,6 +29,19 @@ public class BugFreeClass {
     
     @Spec
     public void aFirstSpec() {
+    }
+    
+    @Spec
+    public void aSecondSpec() {
+    }
+    
+    @Test
+    public void aFirstTest() {
+    }
+    
+    @Test
+    @Spec
+    public void aSpecAndTest() {
     }
     
 }
