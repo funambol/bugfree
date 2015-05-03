@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: com/funambol/bugfreedevfornb/Bundle.properties
+OpenIDE-Module: com.funambol.modules.bugfree/2
+OpenIDE-Module-Layer: org/netbeans/modules/junit/resources/layer.xml
+OpenIDE-Module-Specification-Version: 2.65
+OpenIDE-Module-Needs: javax.script.ScriptEngine.freemarker
+AutoUpdate-Show-In-Client: false
+
+
