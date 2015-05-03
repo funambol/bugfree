@@ -11,7 +11,7 @@ package com.funambol.test;
  * @author ste
  */
 public class HelloWorld {
-    public static String sayHello() {
-        return "hello world";
+    public static String sayHello(final String from) {
+        return "hello world from a " + from;
     }
 }
