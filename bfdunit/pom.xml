@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.funambol</groupId>
     <artifactId>bugfreetoolkit</artifactId>
-    <version>1.4</version>
+    <version>1.5-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Bug Free Development Toolkit</name>
     <description>The bug free toolkit</description>
@@ -108,7 +108,7 @@
     <scm>
         <connection>scm:git:git@github.com:funambol/bugfree.git</connection>
         <url>https://github.com/funambol/bugfree</url>
-        <tag>bugfreetoolkit-1.4</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
